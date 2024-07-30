@@ -9,10 +9,9 @@ greeting = {
 
 def lambda_handler(event, context):
     # TODO implement
-    
-    print(event['pathParameters'])
-    
-    username = event['pathParameters'].get('username')
+
+    # 1.testing-lambda-proxy-integration
+    username = event['queryStringParameters'].get('username', '')
     lang = event['queryStringParameters'].get('lang', '')
 
     print(f"username is: {username}")
