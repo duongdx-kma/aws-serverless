@@ -1,0 +1,31 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "handleS3Bucket",
+			"Effect": "Allow",
+			"Action": [
+				"s3:GetObject",
+				"s3:GetObjectVersion",
+				"s3:PutObject",
+				"s3:ListBucket"
+			],
+			"Resource": [
+				"arn:aws:s3:::duongdx-event-driven",
+				"arn:aws:s3:::duongdx-event-driven/*"
+			]
+		},
+		{
+			"Sid": "CreateAndPutLog",
+			"Effect": "Allow",
+			"Action": [
+				"logs:CreateLogStream",
+				"logs:DescribeLogGroups",
+				"logs:DescribeLogStreams",
+				"logs:CreateLogGroup",
+				"logs:PutLogEvents"
+			],
+			"Resource": "*"
+		}
+	]
+}
