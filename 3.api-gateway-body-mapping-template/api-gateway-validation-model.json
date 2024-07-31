@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Calculator validator Model",
+    "description": "Calculator validator Model",
+    "type": "object",
+    "properties": {
+        "input_1": {
+            "type": "number"
+        },
+        "input_2": {
+            "type": "number"
+        }
+    },
+    "required": [ "input_1", "input_2" ]
+  }
+  

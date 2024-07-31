@@ -1,0 +1,4 @@
+{
+    "customStatusCodeField": "$input.json('$.statusCode')",
+    "customBodyField": "$input.json('$.body')"
+}
