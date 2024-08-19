@@ -23,9 +23,9 @@ def lambda_handler(event, context):
     }
 
 
-aws lambda add-permission \
---function-name "arn:aws:lambda:ap-southeast-1:240993297305:function:demoFunction2:${stageVariables.aliass}" \
---source-arn "arn:aws:execute-api:ap-southeast-1:240993297305:1fm7n3wszg/*/GET/testing" \
---principal apigateway.amazonaws.com \
---statement-id 55a439fc-f5fb-404d-b984-5ca6a4605bc1 \
---action lambda:InvokeFunction
+# aws lambda add-permission \
+# --function-name "arn:aws:lambda:ap-southeast-1:240993297305:function:demoFunction2:${stageVariables.aliass}" \
+# --source-arn "arn:aws:execute-api:ap-southeast-1:240993297305:1fm7n3wszg/*/GET/testing" \
+# --principal apigateway.amazonaws.com \
+# --statement-id 55a439fc-f5fb-404d-b984-5ca6a4605bc1 \
+# --action lambda:InvokeFunction
